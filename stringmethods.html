@@ -1,0 +1,70 @@
+<script>
+    
+    
+const str = "  Hello, World! Welcome to JavaScript String Methods.  ";
+
+// 1. charAt()
+const charAtExample = str.charAt(2); // Get character at index 7
+console.log(`charAt(2): ${charAtExample}`);
+
+
+
+// 2. concat()
+const str1 = "Hello ";
+const str2 = "Shrijith! ";
+const combinedStr = str1.concat(str2); // Combine two strings
+console.log(`concat():`+ combinedStr);
+
+// 3. includes()
+const hasSubstring = str1.includes("Hello"); // Check if substring exists
+console.log(`includes("World"): ${hasSubstring}`);
+
+// 4. indexOf()
+const index = str.indexOf("World"); // Find the index of the substring
+console.log(`indexOf("World"): ${index}`);
+
+// 5. lastIndexOf()
+const lastIndex = str2.lastIndexOf("i"); // Find the last index of the character "o"
+console.log(`lastIndexOf("i"): ${lastIndex}`);
+
+// 6. match()
+const regex = /i/g;
+const matches = str2.match(regex); // Find all matches of a regular expression
+console.log(`match(/i/g): ${matches}`);
+
+// 7. repeat()
+const repeatedStr = str2.repeat(2); // Repeat string twice
+console.log(`repeat(2): ${repeatedStr}`);
+
+// 8. replace()
+const replacedStr = str.replace("World", "User"); // Replace first occurrence of substring
+console.log(`replace("World", "Universe"): ${replacedStr}`);
+
+// 9. search()
+const searchIndex = str2.search("jith"); // Search for a substring and return the index
+console.log(`search("jith"): ${searchIndex}`);
+
+// 10. slice()
+const slicedStr = str2.slice(0, 4); // Slice string from index 7 to 12
+console.log(`slice(0, 4): ${slicedStr}`);
+
+// 11. split()
+const tokens = str2.split(" "); // Split string into an array of words by space
+console.log(`split(" "): ${tokens}`);
+
+// 12. substring()
+const substring = str2.substring(0, 4); // Get substring from index 7 to 12
+console.log(`substring(0, 4): ${substring}`);
+
+// 13. toLowerCase()
+const lowerStr = str2.toLowerCase(); // Convert string to lowercase
+console.log(`toLowerCase(): ${lowerStr}`);
+
+// 14. toUpperCase()
+const upperStr = str2.toUpperCase(); // Convert string to uppercase
+console.log(`toUpperCase(): ${upperStr}`);
+
+// 15. trim()
+const trimmedStr = str2.trim(); // Remove whitespace from both ends of the string
+console.log(`trim(): "${trimmedStr}"`);
+</script>

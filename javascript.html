@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width+ initial-scale=1.0">
+    <title>Decision Maker</title>
+</head>
+<body>
+    
+    <script>
+
+    // let a="shri";
+    // alert("Hello"+a);
+    // a="7";
+    // alert("hey "+a);
+    // confirm("Do u want to exit?");
+    // let a=prompt("Enter ur name"+"shri");
+
+    // Weather Checker 
+
+    // let weather=prompt("Enter the temperature");
+    // if(weather<0)
+    // {
+    //     document.write("freeze");
+    // }
+    // else if(weather>=0 && weather<=10)
+    // {
+    //     document.write("too cold");
+    // }
+    // else if(weather>10 && weather<=20)
+    // {
+    //     document.write("too cold");
+    // }
+    // else if(weather>20 && weather<=30)
+    // {
+    //     document.write("moderate");
+    // }
+    // else if(weather>30 && weather<=40)
+    // {
+    //     document.write("hot");
+    // }
+    // else
+    // {
+    //     document.write("very hot");
+    // }
+
+    // Attendance Checker
+
+    // let totalDays = parseInt(prompt("Enter the total number of working days:"));
+    // let absentDays = parseInt(prompt("Enter the total number of days absent:"));
+    // let attendedDays = totalDays - absentDays;
+    // let percentage = (attendedDays / totalDays) * 100;
+    // if(percentage<75)
+    // {
+    //     document.write("Not allowed");
+    // }
+    // else
+    // {
+    //     document.write("Allowed");
+    // }
+        
+    // Largest Number
+
+    // let a=parseInt(prompt("Enter the first number"));
+    // let b=parseInt(prompt("Enter the second number"));
+    // let c=parseInt(prompt("Enter the third number"));
+    // if(a>b && a>c)
+    // {
+    //     document.write("The largest number is "+a);
+    // }
+    // else if(b>a && b>c)
+    // {
+    //     document.write("The largest number is "+b);
+    // }
+    // else
+    // {
+    //     document.write("The largest number is "+c);
+    // }
+
+    // Smallest Number
+
+    // let a=parseInt(prompt("Enter the first number"));
+    // let b=parseInt(prompt("Enter the second number"));
+    // let c=parseInt(prompt("Enter the third number"));
+
+    // if(a<b && a<c)
+    // {
+    //     document.write("The smallest number is "+a);
+    // }
+    // else if(b<c && b<a)
+    // {
+    //     document.write("The smallest number is "+b);
+    // }
+    // else 
+    // {
+    //     document.write("The smallest number is "+c);
+    // }
+
+    // EB Bill Generator
+
+    // let units=parseInt(prompt("Enter the unit"));
+    // if(units>0 && units<100)
+    // {
+    //     document.write("No payment");
+    // }
+    // else if(units>=100 && units<200)
+    // {
+    //     document.write("Rs.2");
+    // }
+    // else if(units>=200 && units<300)
+    // {
+    //     document.write("Rs.5");
+    // }
+    // else if(units>=300 && units<400)
+    // {
+    //     document.write("Rs.8");
+    // }
+    // else if(units>=400)
+    // {
+    //     document.write("Rs.10");
+    // }
+
+    // Shopping 
+
+    // let shopping=parseInt(prompt("Enter the amt"));
+    // if(shopping>=5000 & shopping<10000)
+    // {
+    //     document.write("Discounted Value :"+5%shopping);
+    // }
+    // else if(shopping>=10000 && shopping<15000)
+    // {
+    //     document.write("Discounted Value :"+10%shopping);
+    // }
+    // else if(shopping>=15000)
+    // {
+    //     document.write("Discounted Value :"+15%shopping);
+    // }
+
+    // Stream Allocation based on marks
+    
+    // let english=parseInt(prompt("Enter the english mark"));
+    // let math=parseInt(prompt("Enter the math mark"));
+    // let science=parseInt(prompt("Enter the science mark"));
+    // let social_studies=parseInt(prompt("Enter the social mark"));
+
+    // if(english>80 && math>80 && science>80 && social_studies>80)
+    // {
+    //     document.write("Stream Allocated: Science");
+    // }
+
+    // else if(english>80 && math>80 || science>50)
+    // {
+    //     document.write("Stream Allocated: Commerce");
+    // }
+
+    // else if(english>80 && social_studies>80)
+    // {
+    //     document.write("Stream Allocated: Humanities");
+    // }
+
+    //Triangle check
+
+    // let side_a=5;
+    // let side_b=2;
+    // let side_c=10;
+    // if(side_a+side_b>side_c)
+    // {
+    //     document.write("It is a triangle");
+    // }
+    // else
+    // {
+    //     document.write("It is not a triangle");
+    // }
+
+    //Age and Wage
+
+    // let input;
+    // let age=parseInt(prompt("Enter the age"));
+    // let gender=prompt("Enter the gender");
+    // if(age>=18 && age<30 && gender=="M")
+    // {
+    //     document.write("Wage is: "+"700");
+    // }
+    // else if(age>=30 && age<=40 && gender=="F")
+    // {
+    //     document.write("Wage is: "+"750");
+    // }
+
+    // else if(age>=30 && age<=40 && gender=="M")
+    // {
+    //     document.write("Wage is: "+"800");
+    // }
+    // else if(age>=30 && age<=40 && gender=="F")
+    // {
+    //     document.write("Wage is: "+"850");
+    // }
+    // else
+    // {
+    //     document.write("Enter appropriate age");
+    // }
+
+    //Operators
+
+    // let n1=parseInt(prompt("Enter the first number"));
+    // let n2=parseInt(prompt("Enter the second number"));
+    // let add=parseInt(n1+n2);
+    // let sub=parseInt(n1-n2);
+    // let mul=parseInt(n1*n2);
+    // let div=parseFloat(n1/n2);
+    // let mod=parseFloat(n1%n2);
+    // let operation;
+    
+    // document.write("Addition : "+add+"<br>");
+    // document.write("Subtraction : "+sub+"<br>");
+    // document.write("Multiplication : "+mul+"<br>");
+    // document.write("Division : "+div+"<br>");
+    // document.write("Modulus : "+mod+"<br>");
+
+    //library
+
+    // let days=parseInt(prompt("Enter the days"));
+    // if(days<=5)
+    // {
+    //     document.write("Charge : "+days*2);
+    // }
+    // else if(days>6 && days<=10)
+    // {
+    //     document.write("Charge : "+days*3);
+    // }
+    // else if(days>11 && days<15)
+    // {
+    //     document.write("Charge : "+days*4);
+    // }
+    // else if(days>15)
+    // {
+    //     document.write("Charge : "+days*5);
+    // }
+
+    // Kilometers
+
+    // let Kilometers=parseInt(prompt("Enter the kilometers"));
+    // if(Kilometers<=10)
+    // {
+    //     document.write("Bill : "+Kilometers*11);
+    // }
+    // else if(Kilometers>10 && Kilometers<=90)
+    // {
+    //     document.write("Bill : "+Kilometers*10);
+    // }
+    // else
+    // {
+    //     document.write("Bill : "+Kilometers*9);
+    // }
+
+    //ATM 
+
+
+        // let balance = 90000; 
+        // let pin=parseInt(prompt("Enter the pin"));
+        // let choice = prompt(
+        //     "Welcome to the ATM\n" +
+        //     "1. Check Balance\n" +
+        //     "2. Deposit Money\n" +
+        //     "3. Withdraw Money\n" +
+        //     "4. Exit\n" +
+        //     "Enter your choice (1-4):"
+        // );
+
+        // if (choice === "1")
+        // {
+        //     document.write("Your balance is 90000");
+        // }
+
+        // else if (choice === "2")
+        // {
+        //     let deposit = parseFloat(prompt("Enter amount to deposit:"));
+        //     if (deposit > 0) {
+        //         balance = balance + deposit;
+        //         document.write("Deposited Amount: "+deposit+"<br>"+" Total Balance : "+balance);
+        //     } else {
+        //         document.write("Invalid amount. Please enter a positive number.");
+        //     }
+        // }
+
+        // else if (choice === "3")
+        // {
+        //     let withdraw = parseFloat(prompt("Enter amount to withdraw:"));
+        //     if (withdraw > 0 && withdraw <= balance) 
+        //     {
+        //         balance = balance - withdraw;
+        //         document.write("Withdrawed Amount : "+withdraw+"<br>"+" Total Balance : "+balance);
+        //     } 
+        //     else if (withdraw > balance)
+        //     {
+        //         document.write("Insufficient balance.");
+        //     } 
+        //     else 
+        //     {
+        //         document.write("Invalid amount. Please enter a positive number.");
+        //     }
+        // }
+
+        // else if (choice === "4") 
+        // {
+        //     document.write("Thank you for using the ATM. Goodbye!");
+        // }
+
+        // else 
+        // {
+        //     document.write("Invalid choice. Please select a valid option.");
+        // }
+
+        // Movie Ticket Booking
+
+// let booking = prompt("Movie Ticket Booking\n" +
+//     "1. Silver : ₹90\n" +
+//     "2. Gold : ₹150\n" +
+//     "3. Diamond : ₹220\n" +
+//     "4. Box : ₹300\n"
+// );
+
+// let type="Silver\n"+"Gold\n"+"Diamond\n"+"Box";
+
+
+// let seats = parseInt(prompt("Select the number of seats"));
+
+
+// let movie = prompt("Choose the movie\n" +
+//     "1. Mufasa\n" +
+//     "2. Amaran\n" +
+//     "3. Viduthalai 2\n" +
+//     "4. Marco\n"
+// );
+
+
+// let theater = prompt("Select the theater\n" +
+//     "1. PVR\n" +
+//     "2. INOX\n" +
+//     "3. KG\n" +
+//     "4. Fun Cinemas\n"
+// );
+
+
+// let timing = prompt("Select the Show-time\n" +
+//     "1. 9AM\n" +
+//     "2. 2PM\n" +
+//     "3. 6PM\n" +
+//     "4. 10PM\n"
+// );
+
+// // Define ticket prices
+// let prices = {
+//     "1": 90+
+//     "2": 150+
+//     "3": 220+
+//     "4": 300
+// };
+
+// // Movie names
+// let movies = {
+//     "1": "Mufasa"+
+//     "2": "Amaran"+
+//     "3": "Viduthalai 2"+
+//     "4": "Marco"
+// };
+
+// // Theater names
+// let theaters = {
+//     "1": "PVR"+
+//     "2": "INOX"+
+//     "3": "KG"+
+//     "4": "Fun Cinemas"
+// };
+
+// // Showtime
+// let timings = {
+//     "1": "9AM"+
+//     "2": "2PM"+
+//     "3": "6PM"+
+//     "4": "10PM"
+// };
+
+// if (booking in prices && movie in movies && theater in theaters && timing in timings) 
+// {
+//     let ticketPrice = prices[booking];
+//     let totalAmount = ticketPrice * seats;
+
+//     document.write(
+//         "E-Ticket"+"<br>"+
+//         "Class: " + booking + "<br>"+
+//         "Movie: " + movies[movie] + "<br>" +
+//         "Theater: " + theaters[theater] + "<br>" +
+//         "Timing: " + timings[timing] + "<br>" +
+//         "Seats: " + seats + "<br>" +
+//         "Total Amount (incl. GST): ₹" + totalAmount
+//     );
+// }
+
+// else
+// {
+//     alert("Invalid input. Please make sure to select valid options.");
+// }
+
+
+// Zomato Delivery App
+
+// TASK2:
+// Welcome to Zomato
+// *************************
+// 1.kfc
+// 2.dominos
+// 3.
+// 4.
+// 5.
+// Enter the hotel value:1
+// 1.burger -300
+// 2.hot wings
+// 3.
+// 4.
+// enter the menu value:1
+// Please enter the count of food:5
+// Your bill payment = 1500
+// Thank You visit again!!!
+
+
+// let zomato = prompt("Welcome to Zomato\n" +
+//     "1. KFC\n" +
+//     "2. Dominos\n" +
+//     "3. Burger King\n" +
+//     "4. Pizza Hut\n" +
+//     "5. Burger Tree"
+// );
+
+// let kprice = {
+//     "1": 300,
+//     "2": 100,
+//     "3": 450,
+//     "4": 250,
+//     "5": 800,
+// };
+
+// let dprice = {
+//     "1": 200,
+//     "2": 350,
+//     "3": 320,
+//     "4": 400,
+//     "5": 500,
+// };
+
+// let bkprice = {
+//     "1": 150,
+//     "2": 100,
+//     "3": 750,
+//     "4": 170,
+//     "5": 200,
+// };
+
+// let pprice = {
+//     "1": 550,
+//     "2": 320,
+//     "3": 410,
+//     "4": 220,
+//     "5": 380,
+// };
+
+// let btprice = {
+//     "1": 300,
+//     "2": 250,
+//     "3": 350,
+//     "4": 400,
+//     "5": 450,
+// };
+
+// let totalAmount = 0; 
+// let order;
+
+// if (zomato === "1") {
+//     let kfc = prompt("Menu\n" +
+//         "1. Chicken Burger - ₹300\n" +
+//         "2. Hot Wings - ₹100\n" +
+//         "3. Zinger Box Meal  - ₹450\n" +
+//         "4. Popcorn Chicken(L) - ₹250\n" +
+//         "5. Chicken Bucket - ₹800"
+//     );
+//     order = parseInt(prompt("Enter the number of orders for this item"));
+//     totalAmount = order * kprice[kfc]; 
+// }
+
+// else if (zomato === "2") {
+//     let dominos = prompt("Menu\n" +
+//         "1. Margherita Cheese Burst - ₹200\n" +
+//         "2. Farmhouse Cheese Burst - ₹350\n" +
+//         "3. Cheese Volcano Peppy Paneer - ₹320\n" +
+//         "4. Chicken Dominator Pizza - ₹400\n" +
+//         "5. Indi Chicken Tikka Cheese Burst - ₹500"
+//     );
+//     order = parseInt(prompt("Enter the number of orders for this item"));
+//     totalAmount = order * dprice[dominos]; 
+// }
+
+// else if (zomato === "3") {
+//     let bk = prompt("Menu\n" +
+//         "1. Crispy Chicken Double Patty Burger - ₹150\n" +
+//         "2. BK Chicken Pizza Puff - ₹100\n" +
+//         "3. Classic Family Feast for 4 - Veg - ₹750\n" +
+//         "4. King Peri Peri Fries - ₹170\n" +
+//         "5. Crunchy Chicken Taco Peri Peri Meal - ₹200"
+//     );
+//     order = parseInt(prompt("Enter the number of orders for this item"));
+//     totalAmount = order * bkprice[bk]; 
+// }
+
+// else if (zomato === "4") {
+//     let pizza = prompt("Menu\n" +
+//         "1. Hut Treat Meal for 2 - ₹550\n" +
+//         "2. Country Feast - ₹320\n" +
+//         "3. Chicken Supreme - ₹410\n" +
+//         "4. Schezwan Margherita - ₹220\n" +
+//         "5. Awesome American Cheesy - ₹380"
+//     );
+//     order = parseInt(prompt("Enter the number of orders for this item"));
+//     totalAmount = order * pprice[pizza]; 
+// }
+
+// else if (zomato === "5") {
+//     let bt = prompt("Menu\n" +
+//         "1. Zinger Paneer Burger - ₹300\n" +
+//         "2. Brooklyn Chicken Burger - ₹250\n" +
+//         "3. Honey Dew Grilled Chicken Burger - ₹350\n" +
+//         "4. Lava Cheese Chicken Burger - ₹400\n" +
+//         "5. Mozzarella Chicken Burger - ₹450"
+//     );
+//     order = parseInt(prompt("Enter the number of orders for this item"));
+//     totalAmount = order * btprice[bt]; 
+// }
+
+// else
+// {
+//     alert("Invalid input. Please make sure to select valid options.");
+// }
+
+// alert("Your bill payment: ₹" + totalAmount);
+
+
+// Food List
+
+// let quantity=prompt("Oreo Milkshake Recipe\n"+
+// "Enter the quantity of members");
+
+// icecream = 100;
+// milk=100;
+// oreo=8;
+// chocosause=1;
+
+// let icecreams = icecream * quantity;
+// let milkk = milk * quantity;
+// let oreoo = oreo * quantity;
+// let chocosausee = chocosause * quantity;
+
+// document.write("Quantity required for icecream is "+icecreams+" gm"+"<br>");
+// document.write("Quantity required for milk is "+milkk+" ml"+"<br>");
+// document.write("Quantity required for oreo is "+oreoo+" cookies"+"<br>");
+// document.write("Quantity required for chocosause is "+chocosausee+" tablespoon"+"<br>");
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//             //0   1  2  3  4  5  6   7  8   9
+// // 1. forEach(): Executes a function for each element in the array
+// array.forEach(element => console.log(element));
+
+// const squares = array.map(x => x * x);
+// console.log('print the square values of each index ', squares);
+
+// const evens = array.filter(x => x % 2 === 0);
+// console.log('Even numbers:', evens);
+
+// const sum = array.reduce((a, b) => a + b, 0);
+// console.log('Sum of elements:', sum);
+
+// const found = array.find(x => x > 4);
+// // Will return undefined since there's no element greater than 10
+// console.log('First element greater than 10:', found);
+
+
+// const index = array.indexOf(3);
+// console.log('Index of 3:', index);
+
+
+// array.push(11);
+// console.log('Array after push:', array);
+
+// const lastItem = array.pop();
+// console.log('Popped item:', lastItem);
+// console.log('Array after pop:', array);
+
+
+// const firstItem = array.shift();
+// console.log('Shifted item:', firstItem);
+// console.log('Array after shift:', array);
+
+// array.unshift(1);
+// console.log('Array after unshift:', array);
+
+// const spliced = array.splice(3, 2, 99, 100,200);
+// console.log('Array after splice:', array);
+// console.log('Removed elements:', spliced);
+
+// const sliced = array.slice(2, 5);
+// console.log('Sliced array (index 2 to 5):', sliced);
+
+
+// const array2 = [11, 12, 13];
+// const mergedArray = array.concat(array2);
+// console.log('Merged array:', mergedArray);
+
+
+// const joined = array.join(', ');
+// console.log('Joined array:', joined);
+
+
+// const hasItem = array.includes(5);
+// console.log('Does the array include 5?', hasItem);
+
+
+// const hasNegative = array.some(x => x < 0);
+// console.log('Does the array have negative values?', hasNegative);
+
+
+// const allPositive = array.every(x => x > 0);
+// console.log('Are all elements positive?', allPositive);
+
+
+// const sortedd = array.sort((a, b) => a-b);  
+// // Sorting in ascending order
+// console.log('Sorted array:', sortedd);
+
+// const sorted = array.sort((a, b) => b-a);  
+// // Sorting in descending order
+// console.log('Sorted array:', sorted);
+
+// const reversed = array.reverse();
+// console.log('Reversed array:', reversed);
+
+
+// check vowel in a string
+
+// let a=prompt("Enter a string");
+// if(a.includes("a") || a.includes("e") || a.includes("i") || a.includes("o") || a.includes("u"))
+// {
+//     document.write("Vowel is present");
+// }
+// else
+// {
+//     document.write("No vowel");
+// }
+
+// prime number
+
+// let no=parseInt(prompt("Enter a number"));
+// if(no%2==1)
+// {
+//     document.write("It is a prime number");
+// }
+// else
+// {
+//     document.write("It is not a prime number");
+// }
+
+// sum of digit
+
+// let c=parseInt(prompt("Enter a number"));
+// let sum=0;
+// let n=c.length;
+// for(let i=0;i<n;i++)
+// {
+//     sum+=c[i];
+// }
+// document.write(sum);
+
+
+//count
+
+// let number="123";
+// let count=number.length;
+// document.write(count);
+
+//odd or even
+
+// let enter=parseInt(prompt("Enter a no"))
+// if(enter%2==1)
+// {
+//     document.write("Odd no");
+// }
+// else
+// {
+//     document.write("Even no");
+// }
+
+//reverse an array
+
+// const array=[1,2,3,4,5];
+// document.write(array.reverse());
+
+</script>
+</body>
+</html>

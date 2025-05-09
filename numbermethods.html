@@ -1,0 +1,44 @@
+<script>
+
+
+    // 1. Number.parseInt()
+const str = "456.45";
+const intVal = Number.parseInt(str, 10);
+ // Converts string to an integer (base 10)
+console.log(`Number.parseInt(): ${intVal}`); // Output: 123
+
+// 2. Number.parseFloat()
+const floatStr = "123.45";
+const floatVal = Number.parseFloat(floatStr); // Converts string to a floating-point number
+console.log(`Number.parseFloat(): ${floatVal}`); // Output: 123.45
+
+// 3. Number.isNaN()
+const nanCheck = Number.isNaN(); // Check if the value is NaN
+console.log(`Number.isNaN("hello"): ${nanCheck}`); 
+// Output: false (it's a string, not NaN)
+
+const nanValue = Number.isNaN(NaN); // Check if the value is NaN
+console.log(`Number.isNaN(NaN): ${nanValue}`); // Output: true
+
+// 4. Number.isFinite()
+const finiteCheck = Number.isFinite(123); // Check if the value is a finite number
+console.log(`Number.isFinite(123): ${finiteCheck}`); // Output: true
+
+const infinityCheck = Number.isFinite(Infinity); // Check if Infinity is finite
+console.log(`Number.isFinite(Infinity): ${infinityCheck}`); // Output: false
+
+// 5. Number.isInteger()
+const integerCheck = Number.isInteger(123); // Check if the value is an integer
+console.log(`Number.isInteger(123): ${integerCheck}`); // Output: true
+
+const floatCheck = Number.isInteger(123.45); // Check if the value is an integer
+console.log(`Number.isInteger(123.45): ${floatCheck}`); // Output: false
+
+// 6. Number.toFixed()
+const num = 123.451789;
+const fixedStr = num.toFixed(2); // Format the number to 2 decimal places
+console.log(`num.toFixed(2): ${fixedStr}`); // Output: "123.46"
+
+
+
+</script>

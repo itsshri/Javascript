@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="orders.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<style>
+        *{
+  margin : 0;
+  padding : 0;
+  min-hieght :100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+#apply-coupon-btn {
+    width: 150px;              /* Width of the button */
+    height: 40px;              /* Height of the button */
+    background-color: #e2962b; /* Button background color */
+    color: white;              /* Text color */
+    font-size: 16px;           /* Font size for the button text */
+    border: none;              /* No border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;          /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-align: center;        /* Centering text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Hover effect for the button */
+#apply-coupon-btn:hover {
+    background-color: #c87e29;  /* Darken the background color on hover */
+    transform: scale(1.05);      /* Slightly enlarge the button on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+/* Focus effect for accessibility */
+#apply-coupon-btn:focus {
+    outline: none;             /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.6); /* Orange glow effect */
+}
+
+/* Styling the input text box */
+input[type="text"] {
+    width: 100%;               /* Makes the input take up full width */
+    padding: 5px;             /* Adds padding inside the input */
+    border: 2px solid #e2962b; /* Sets the border color */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 16px;           /* Font size */
+    color: #333;               /* Text color */
+    background-color: #f9f9f9; /* Light gray background */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Focus effect for input */
+input[type="text"]:focus {
+    border-color: #c87e29; /* Darker border color when focused */
+    box-shadow: 0 0 5px rgba(200, 126, 41, 0.6); /* Glow effect */
+    outline: none; /* Remove the default outline */
+}
+
+
+
+</style>
+<body>
+    <!-- Navbar Section -->
+    <div class="header">
+        <img src="burger.png" alt="" style="width: 50px; border-radius: 10px; height: 50px; margin-top: 10px; padding-left: 100px;">
+        <div class="container">
+            <div class="logo"><a href="#">EatSure</a></div>
+            <div class="nav">
+                <a href="EatSure.html">Home</a>
+                <a href="Orders.html">My Orders</a>
+                <a href="About.html">About</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <section class="order-section">
+        <div class="order-container">
+            <h2>Your Orders</h2>
+
+            <!-- Order Cards for Menu -->
+            <div class="order-cards-container">
+                <!-- Order Card 1 -->
+                <div class="order-card">
+                    <img src="https://boomerangicecreams.com/wp-content/uploads/2023/10/Toppins.webp" alt="Boomerang" class="food-img" style="height: 200px; width: 170px;">
+                    <img src="https://boomerangicecreams.com/wp-content/uploads/2023/10/Economy-Range.webp" class="food-img"  style="height: 200px; width: 170px;">
+                    <img src="https://boomerangicecreams.com/wp-content/uploads/2023/10/Premium-Range.webp" class="food-img"  style="height: 200px; width: 170px;">
+                    <img src="https://boomerangicecreams.com/wp-content/uploads/2023/10/Pasters.webp" class="food-img"  style="height: 200px; width: 170px;">
+
+
+                    <div class="order-details">
+                        <center>
+
+                            <h3>Boomerang</h3>
+                            <!-- <p><strong>₹100 OFF ABOVE ₹299</strong></p>     -->
+                            <p><strong>Exclusive Offer!</strong></p>
+                        <h4>Total Price: ₹<span id="total-price-1">350</span></h4>
+                        <div class="restaurant-info">
+                            <p><strong>Distance:</strong> 2.5 km</p>
+                        </div>
+                        <p> Coupon
+                            <br>
+                            <input type="text" placeholder="Coupon Code">
+                            <button id="apply-coupon-btn" style="width: 100px; height: 50px; background-color: rgb(226, 150, 43);">Apply Coupon</button>
+
+                        </p>
+                        <button onclick="placeOrder(1)">Place Order</button>
+                        
+                    </center>
+                        <!-- Submenu Items (Small Cards) -->
+
+                             <div class="submenu">
+                                <h4 class="marquee">50% OFF ABOVE ₹100 </h4>
+                                <center>
+
+                                    <h4 style="color: brown;"class="marquee">USE CODE FLAT100 </h4>
+                                </center>
+                                 <div class="submenu-item">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Order Cards -->
+                <!-- Order Card 2 -->
+                <div class="order-card">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/RX_THUMBNAIL/IMAGES/VENDOR/2024/5/13/7329840d-d9b1-46fd-a0c0-5901883dab29_697620.jpg" alt="Frozen Bottle" class="food-img" style="height: 200px; width: 180px;">
+                    <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hvY29sYXRlJTIwbWlsayUyMHNoYWtlfGVufDB8fDB8fHww" class="food-img"  style="height: 200px; width: 160px;">
+                    <img src="https://img.freepik.com/free-photo/cacao-milkshake-topped-with-colourful-sprinkles-ice-cream-oreo_140725-8264.jpg?ga=GA1.1.1259838632.1727287976&semt=ais_hybrid" class="food-img"  style="height: 200px; width: 150px;">
+                    <img src="https://img.freepik.com/premium-photo/sweet-milkshake-with-whipped-cream_82893-18487.jpg?ga=GA1.1.1259838632.1727287976&semt=ais_hybrid" class="food-img"  style="height: 200px; width: 150px;">
+                    <div class="order-details">
+                        <center>
+                        <h3>Frozen Bottle</h3>
+              
+                    
+                        <p>Total Price: ₹<span id="total-price-2">150</span></p>
+                        <div class="restaurant-info">
+            
+                            <p><strong>Distance:</strong> 3.1 km</p>
+
+                        </div>
+
+                        <button onclick="placeOrder(2)">Place Order</button>
+                        </center>
+                        <center>
+                            <br>
+                            <br>
+                            <br>
+                                <h1 class="marquee">Most Ordered : Kit-Kat Shake📈 </h1>
+                            </center>
+                             <div class="submenu-item">
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!-- Order Card 3  -->
+                <div class="order-card">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/bwkfac2r3bpphgfm7rh9" alt="Frozen Bottle" class="food-img" style="height: 200px; width: 180px;">
+                    <img src="https://img.freepik.com/premium-photo/dum-handi-chicken-biryani-is-prepared-earthen-clay-pot-called-haandi-popular-indian-non-vegetarian-food_466689-52221.jpg?ga=GA1.1.1259838632.1727287976&semt=ais_hybrid" class="food-img"  style="height: 200px; width: 180px;">
+                    <img src="https://img.freepik.com/free-photo/delicious-chicken-table_144627-8758.jpg?ga=GA1.1.1259838632.1727287976&semt=ais_hybrid" class="food-img"  style="height: 200px; width: 200px;">
+                    <img src="https://img.freepik.com/premium-photo/bbq-chicken-wings-farm-organic-poultry-top-view_89816-2904.jpg?ga=GA1.1.1259838632.1727287976&semt=ais_hybrid" class="food-img"  style="height: 200px; width: 150px;">
+                  
+                    <div class="order-details">
+                        <center>
+                        <h3>SS HYDERABAD BIRIYANI</h3>
+                   
+                    
+                        <p>Total Price: ₹<span id="total-price-2">400</span></p>
+                        <div class="restaurant-info">
+            
+                            <p><strong>Distance:</strong> 1.5 km</p>
+                          
+                        </div>
+
+                        <button onclick="placeOrder(3)">Place Order</button>
+          
+               
+                            <center>
+<br>
+<br>
+                                <h4 style="color: brown;"class="marquee">FREE DELIVERY </h4>
+                            </center>
+                             <div class="submenu-item">
+                        </div>
+                        </center>
+                    </div>
+                </div>
+
+              
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 EatSure. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Order Placed Successfully!</div>
+
+    <script src="orders.js"></script>
+</body>
+</html>

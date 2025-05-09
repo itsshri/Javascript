@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+       function validate(){
+        const email=document.querySelector("input[name='user']").value.trim();
+        const password=document.querySelector("input[name='password']").value.trim();
+        if(email=="shri@gmail.com" && password=="2004")
+       {
+        alert("Login Successful");
+        return true;
+       }
+       else
+       {
+        alert("Invalid login credentials");
+        return false;
+       }
+    }
+    </script>
+</head>
+<body>
+
+
+
+    <main class="main-login">
+        <div class="left-login">
+            <h1 style="color: brown; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Welcome to EatSure</h1>
+            <!-- Video element with autoplay, muted, and loop attributes -->
+            <video src="vid.mp4" autoplay muted loop controls style="width: 700px; padding-left: 100px; margin-left: 10px;">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="right-login">
+            <div class="card-login">
+                <h1 style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: rgb(237, 196, 196);">Login to Explore</h1>
+                <div class="textfield">
+                    <label for="user">User</label>
+                    <input type="text" name="user" placeholder="User">
+                </div>
+
+                <div class="textfield">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+
+                <a href ="EatSure.html" onclick="return validate()"><button class="btn-login">Login</button></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

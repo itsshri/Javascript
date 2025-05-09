@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <p id="n">Welcome</p>
+    <button id="shri">button1</button>
+
+    <p id="a">Js</p>
+    <button id="jith">button2</button>
+
+    <p id="v">Java</p>
+    <button id="nos">button3</button>
+    <script>
+        // document.write("Shri");
+        // document.writeln("jith");
+        // document.write("R");
+
+        document.getElementById("shri").onclick=function(){
+            alert("Loading");
+            document.getElementById("n").innerHTML="HEY Shrii!!";
+        }
+
+        document.getElementById("jith").onclick=function(){
+            alert("Loading");
+            document.getElementById("a").innerHTML= document.getElementById("a").innerHTML + " by Explore IT";
+        }
+
+        document.getElementById("nos").onclick=function(){
+            alert("Loading");
+            document.getElementById("v").innerHTML= "Javascript " + document.getElementById("a").innerHTML + " by Explore IT";
+        }
+
+
+    </script>
+</body>
+</html>

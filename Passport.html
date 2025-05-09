@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Registration</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+            alert('Successfully registered!');
+            // You can add additional code here to handle the form data if needed
+            // For example, you might send the data to a server using AJAX
+        }
+    </script>
+    <style>
+        .head{
+            padding-left: 100px;
+            width: 1300px;
+            text-align: center;
+            border: solid pink;
+            margin:30px;
+            margin-top: -100px;
+        }
+
+        .self{
+            padding-left: 20px;
+            width: 1300px;
+            text-align: left;
+            border: solid rgb(0, 0, 0);
+            margin:30px;
+        }
+
+        .service{
+            margin:30px;
+        }
+
+        .details
+        {
+            margin:30px;
+        }
+
+        .place
+        {
+            margin:30px;
+        }
+
+        /* .famly
+        {
+            margin:30px;
+        } */
+
+        .address
+        {
+            margin:30px;
+        }
+
+        .contact
+        {
+            margin:30px;
+        }
+
+        .ref{
+            margin:30px;
+        }
+
+        .pass
+        {
+            margin:30px;
+        }
+
+        .other
+        {
+            margin:30px;
+        }
+
+        .self
+        {
+            margin:30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="india.jpg" style="padding-right: 600px; width:100px" alt=""> 
+    <div class="head">
+         <h2 style="font-style: bold;">PASSPORT APPLICATION FORM</h2>
+         <h2>Government of India, Ministry of External Affairs</h2>
+         <h3 style="text-align: left;">Please read the Passport Information Booklet carefully before filling the form. Furnishing of incorrect information/ suppression of information would lead to rejection of application and would attract penal provisions as prescribed under the Passports Act, 1967.
+            Please produce your original documents at the time of submission of the form. 
+            All fields marked with (*) are mandatory to fill.
+         </h3>
+    </div>
+
+    <div class="service">
+        <h3 style="background-color:rgb(145, 140, 140); ">Service Required</h3>
+        <h5>Applying for *
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+        <h5>Type of Application *
+            <input type="radio" name="hello">Normal
+            <input type="radio" name="hello">Tatkaal
+        </h5>
+        <h5>Type of Passport Booklet *
+            <input type="radio" name="hello">36 Pages
+            <input type="radio" name="hello">60 Pages
+        </h5>
+        <h5>Validity Required (For minors between 15 and 18)
+            <input type="radio" name="hello">10 years
+            <input type="radio" name="hello">Up to age 18
+            <input type="radio" name="hello">Not applicable
+        </h5>
+    </div>
+
+    <div class="details">
+        <h3 style="background-color:rgb(145, 140, 140);">Applicant Details</h3>
+        <h5>Applicant's Given Name (Given Name means First Name followed by middle Name (if any))*
+            <br>
+            <br>
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+        <h5>Surname
+            <br>
+            <br>
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+        <h5>Are you known by any other names(aliases)?*
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+        <h5>Have you ever changed your name?*
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+        <h5>Date of Birth (DD/MM/YYYY)
+            <input type="date">
+        </h5>
+    </div>
+
+    
+    <div class="place">
+        <h3 style="background-color:rgb(145, 140, 140);">Place Of Birth</h3>
+        <h5>Village or Town or City*
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+        <h5>Country (If abroad)*
+            <input type="textbox" style="padding-left: 140px;">
+        </h5>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <h5 style="margin: 0;">State (If in India)*</h5>
+            <input type="text" style="padding-left: 40px;">
+        
+            <h5 style="margin: 0;">District (If in India)*</h5>
+            <input type="text" style="padding-left: 40px;">
+        </div>
+        <p>If born before 15/08/1947 in a place now in Pakistan or Bangladesh, select "Undivided India".</p> 
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <h5 style="margin: 0;">Gender *</h5>
+            <input type="text" style="padding-left: 30px;">
+        
+            <h5 style="margin: 0;">Marital Status *</h5>
+            <input type="text" style="padding-left: 30px;">
+
+            <h5 style="margin: 0;">Citizenship of India by *</h5>
+            <input type="text" style="padding-left: 40px;">
+        </div>
+        <br>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <h5 style="margin: 0;">PAN (if available)</h5>
+            <input type="text" style="padding-left: 30px;">
+        
+            <h5 style="margin: 0;">Voter ID (if available)</h5>
+            <input type="text" style="padding-left: 30px;">
+
+            <h5 style="margin: 0;">Citizenship of India by *</h5>
+            <input type="text" style="padding-left: 40px;">
+        </div>
+
+        <h5>Employment Type *
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+
+        <h5>Is either of your parent (in case of minor)/ spouse, a government servant? * 
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <h5 style="margin: 0;">Educational Qualification * </h5>
+            <input type="text" style="padding-left: 30px;">
+        
+            <h5 style="margin: 0;">Are you eligible for Non-ECR category? *</h5>
+            <input type="text" style="padding-left: 30px;">
+        </div>
+
+        <h5>Visible Distinguishing Mark
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+
+        
+
+        <div class="famly">
+            <h3 style="background-color:rgb(145, 140, 140);">Family Details (You have to provide atleast one Father/Mother/Legal Guardian details.)</h3>
+            <h5>Father's Given Name (Given Name means First Name followed by Middle Name (If any))
+                <br>
+                <input type="textbox" style="padding-left: 20px;">
+            </h5>
+
+            <h5>Surname
+                <br>
+
+                <input type="textbox" style="padding-left: 20px;">
+            </h5>
+
+            <h5>Legal Guardian's Given Name (if applicable)
+                <br>
+
+                <input type="textbox" style="padding-left: 20px;">
+            </h5>
+
+            <h5>Surname
+                <br>
+                <input type="textbox" style="padding-left: 20px;">
+            </h5>
+
+            <h5>Mother's Given Name (Given Name means First Name followed by Middle Name (If any))
+                <br>
+                <input type="textbox" style="padding-left: 20px;">
+            </h5>
+
+            <h5>Surname
+                <br>
+                <input type="textbox" style="padding-left: 20px;">
+            </h5>
+
+        </div>
+
+    </div>
+
+    <div class="address">
+        <h3 style="background-color:rgb(145, 140, 140);">Present Residential Address details (where applicant presently resides)</h3>
+        <h5>Is your present address out of India?*
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+        <h5>Is permanent address same as present address?
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+
+    </div>
+
+    <div class="contact">
+        <h3 style="background-color:rgb(145, 140, 140);">Emergency Contact Details</h3>
+        <h5>Name and Address*
+                <br>
+                <input type="textbox" style="padding-left: 20px;">
+        </h5>
+
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <h5 style="margin: 0;">Mobile Number </h5>
+            <input type="text" style="padding-left: 30px;">
+        
+            <h5 style="margin: 0;">Telephone Number</h5>
+            <input type="text" style="padding-left: 30px;">
+        </div>
+
+        <h5>E-mail ID
+            <input type="textbox" style="padding-left: 20px;">
+    </h5>
+
+    </div>
+
+    <div class="ref">
+        <h3 style="background-color:rgb(145, 140, 140);">References in your Village or Town or City</h3>
+        <h5>First Reference Name and Address*
+                <br>
+                <input type="textbox" style="padding-left: 20px;">
+        </h5>
+        
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <h5 style="margin: 0;">Mobile Number </h5>
+            <input type="text" style="padding-left: 30px;">
+            
+            <h5 style="margin: 0;">Telephone Number</h5>
+            <input type="text" style="padding-left: 30px;">
+        </div>
+        
+        <h5>Second Reference Name and Address*
+            <br>
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+        
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <h5 style="margin: 0;">Mobile Number </h5>
+            <input type="text" style="padding-left: 30px;">
+            
+            <h5 style="margin: 0;">Telephone Number</h5>
+            <input type="text" style="padding-left: 30px;">
+        </div>
+       
+
+    </div>
+
+    <div class="pass">
+        <h3 style="background-color:rgb(145, 140, 140);">Previous Passport/ Application Details</h3>
+        <h5>Have you held/ hold any diplomatic/official passport?
+        </h5>
+        <br>
+        
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <h5 style="margin: 0;">Passport Number </h5>
+            <input type="text" style="padding-left: 30px;">
+            
+            <h5 style="margin: 0;">Date of Issue (DD/MM/YYYY)</h5>
+            <input type="date" style="padding-left: 30px;">
+        </div>
+        
+        <h5>Date of Expiry (DD/MM/YYYY)
+            <input type="date" style="padding-left: 20px;">
+        </h5>
+
+        <h5>Place of Issue
+            <input type="textbox" style="padding-left: 20px;">
+        </h5>
+
+        Have you ever applied for passport, but not issued?"
+
+        <h5>Have you ever applied for passport, but not issued?"
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+        
+    </div>
+
+    <div class="other">
+
+        <h3 style="background-color:rgb(145, 140, 140);">Other Details</h3>
+
+        <h5> 1) Have you ever been charged with criminal proceedings or any arrest warrant/ summon pending before a court of India?*
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+
+        <h5>2) Have you at any time during the period of 5 years immediately preceding the date of this application Yes No been convicted by a court in India for any criminal offence and sentenced to imprisonment for two years or more?"
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+
+        <h5>3) Have you ever been refused or denied passport? *
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+
+        <h5> 4) Has your Passport ever been impounded or Revoked? *
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+
+        <h5>5) Have you ever applied for/ been granted political asylum to/ by any foreign country?"
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+
+        <h5>6) Have you ever returned to India on Emergency Certificate (EC) or were ever deported or repatriated?
+            <input type="radio" name="hello">Yes
+            <input type="radio" name="hello">No
+        </h5>
+
+    </div>
+
+    <div class="self">
+        <h3>
+    Self Declaration
+</h3>
+<!-- <p> -->
+    I owe allegiance to the sovereignty, unity & integrity of India, and have not voluntarily acquired citizenship or travel document of any other country. I have not lost, surrendered or been deprived of the citizenship of India and I affirm that the information given by me in this form and the enclosures is true and I solely responsible for its accuracy, and I am liable to be penalized or prosecuted if found otherwise. I am aware that under the Passport Act, 1967 it is a criminal offence to furnish any false information or to suppress any material information with a view to obtaining passport or travel document.
+<!-- </p> -->
+ <br>
+    <input type="checkbox">I Agree
+    </div>
+    </div>
+
+    
+    <div style="display: flex; align-items: center; gap: 20px;  margin:30px;">
+        <h5 style="margin: 0;">Place *  </h5>
+        <input type="text" style="padding-left: 30px;">
+        
+        <h5 style="margin: 0;">Date (DD/MM/YYYY) *</h5>
+        <input type="date" style="padding-left: 30px;">
+    </div>
+
+    <center>
+
+        <form onsubmit="handleSubmit(event)">
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom2</title>
+</head>
+<style>
+    .c{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        float: left;
+    }
+    #id1{
+        background-color: black;
+        
+    }
+    #id2{
+        background-color: rgb(26, 133, 255);
+        
+    }
+    #id3{
+        background-color: rgb(255, 54, 54);
+    }
+    #id4{
+        background-color: rgb(86, 59, 59);
+    }
+</style>
+
+<body>
+    <div class="c" id="id1"></div>
+    <div class="c" id="id2"></div>
+    <div class="c" id="id3"></div>
+    <div class="c" id="id4"></div>
+    
+    <script>
+        document.getElementById("id1").onclick=function(){
+            document.getElementById("id1").style.display="none";
+        }
+
+        document.getElementById("id2").onclick=function(){
+            document.getElementById("id2").style.display="none";
+        }
+
+        document.getElementById("id3").onclick=function(){
+            document.getElementById("id3").style.display="none";
+        }
+
+        document.getElementById("id4").onclick=function(){
+            document.getElementById("id4").style.backgroundColor="black";
+        }
+
+        
+    </script>
+</body>
+</html>

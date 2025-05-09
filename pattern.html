@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    <script>
+    // let i,j,row;
+    // row=prompt("Enter the row");
+
+    // Pattern
+
+    // for(i=0;i<row;i++)
+    // {
+    //     for(j=0;j<i;j++)
+    //     {
+    //         document.write(i+" ");
+    //     }
+    //     document.write("<br>");
+    // }
+
+
+    // Reverse Pattern
+
+    // for(i=row;i>0;i--)
+    // {
+    //     for(j=0;j<i;j++)
+    //     {
+    //         document.write(i+" ");
+    //     }
+    //     document.write("<br>");
+    // }
+
+
+//Right side triangle 
+
+//     for (i = 1; i <= row; i++) {//1<=8
+//     for (j = 1; j <= row - i; j++) //1<=8-1
+//       {
+//         document.write("&nbsp;&nbsp;&nbsp;"); 
+//     }
+//    for (j = 1; j <= i; j++) {
+//        document.write("* ");
+//    }
+//     document.write("<br>");
+//     }
+
+
+
+//Right side triangle reverse
+
+//     for (let i = 1; i <= row; i++) {
+//     for (let j = 1; j <= i - 1; j++) {
+//         document.write("&nbsp;&nbsp;&nbsp;");
+//     }
+//     for (let j = 1; j <= row - i + 1; j++) {
+//         document.write("* ");
+//     }
+//     document.write("<br>");
+// }
+
+// Perfect Number
+
+let number =parseInt(prompt("Enter a number"));
+let sum = 1;
+
+for (let i = 2; i <= number / 2; i++) { 
+    if (number % i == 0) {
+        sum += i; 
+    }
+}
+
+if (sum === number) {
+    document.write("It is a perfect number");
+} else {
+    document.write("It is not a perfect number");
+}
+
+
+
+
+
+    </script>
+</body>
+</html>
